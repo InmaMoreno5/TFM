@@ -6,3 +6,4 @@ La aplicación está formada por dos archivos de código: ui.R y server.R. Para 
 
 En la parte superior del editor de scripts aparece el botón RunApp. Clicando este botón se ejecutará la aplicación. 
 
+(https://raw.githubusercontent.com/InmaMoreno5/TFM/
