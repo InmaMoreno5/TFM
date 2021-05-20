@@ -1,5 +1,8 @@
-# TFM
-Trabajo Fin de Master
+# Trabajo Fin de Máster - Bioinformática y Bioestadistica
 
-- Código R para la lectura del archivo inicial y filtrado de los genes de las rasopatías: importacion de los datos y archivo genes_vcf.Rmd
-- Archivo VCF con los genes de las rasopatías filtrados: genes.vcf
+# Desarrollo de una aplicación web para el análisis automatizado de variantes genéticas en los genes de las RASopatías.
+
+La aplicación está formada por dos archivos de código: ui.R y server.R. Para el funcionamiento de la aplicación es necesario descargar ambos archivos y abrirlos simultáneamente en Rstudio. 
+
+En la parte superior del editor de scripts aparece el botón RunApp. Clicando este botón se ejecutará la aplicación. 
+
