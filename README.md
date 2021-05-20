@@ -1,10 +1,10 @@
-# Trabajo Fin de Máster - Bioinformática y Bioestadistica
+# Trabajo Fin de Máster - Bioinformática y Bioestadistica - Desarrollo de una aplicación web para el análisis automatizado de variantes genéticas en los genes de las RASopatías.
 
-# Desarrollo de una aplicación web para el análisis automatizado de variantes genéticas en los genes de las RASopatías.
+La aplicación está formada por dos archivos de código: ui.R y server.R. 
 
-La aplicación está formada por dos archivos de código: ui.R y server.R. Para el funcionamiento de la aplicación es necesario descargar ambos archivos y abrirlos simultáneamente en Rstudio. 
+Para el funcionamiento de la aplicación es necesario descargar ambos archivos y abrirlos simultáneamente en Rstudio. 
 
-En la parte superior del editor de scripts aparece el botón RunApp. Clicando este botón se ejecutará la aplicación. 
+En la parte superior del editor de scripts aparecerá el botón RunApp. Clicando este botón se ejecutará la aplicación. 
 
 (https://raw.githubusercontent.com/InmaMoreno5/TFM/main/RunApp.png)
 
