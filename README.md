@@ -8,3 +8,7 @@ En la parte superior del editor de scripts aparece el botón RunApp. Clicando es
 
 (https://raw.githubusercontent.com/InmaMoreno5/TFM/main/RunApp.png)
 
+runGitHub("InmaMoreno5/TFM/main", "InmaMoreno5")
+
+
+
