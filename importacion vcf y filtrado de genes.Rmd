@@ -1,0 +1,59 @@
+---
+title: "Importación de los datos VCF y creación del archivo genes.vcf
+---
+
+* Cargo el paquete VariantAnnotation:
+
+```{r}
+library("VariantAnnotation")
+```
+
+
+* Cargo el archivo:
+
+```{r}
+fileNA<- ("C:/Users/Inma/Google Drive/Master Bioinformatica y bioestadistica/TFM/Datos VCF referencia/trio_chino/HG007_NA24695_mother.vcf.gz")
+vcfNA<-readVcf(fileNA, "hg19")
+
+```
+
+
+* Selección de las posiciones genómicas de los genes de interés implicados en las rasopatías. Así puedo crear un archivo vcf más pequeño que sólo contenga la información de estos genes. 
+
+
+```{r}
+stopifnot(file.exists(fileNA))
+fileNA.tbi<-paste(fileNA, ".tbi", sep="")
+if(!(file.exists(fileNA.tbi)))
+indexTabix(fileNA, format="vcf")
+
+
+```
+
+```{r}
+rangos<- GRanges(seqnames=c("1","1", "2", "2","3","3", "3", "5","7", "10", "11", "11", "12", "12",  "12", "14", "15", "17", "19", "19", "22"),
+    IRanges(
+    start=c(115247085, 155867599,28974506, 39208537, 12625100, 141205889, 138066539, 86563705, 140419127, 112679301, 532242,  25357723, 119076752, 8975068, 112856155, 50583847, 66679155,    29421945, 4090319,50138549, 21333751), 
+  end=c(115259515,155881195, 29025806, 39351486, 12705725,     141334184,138124375, 86687748,  140624564, 112773425, 537287,   25403870, 119178859,  9039597,  112947717,  50698296,      66784650,  29709134, 4124126,  50143458, 21353327), 
+  name = c("NRAS", "RIT1", "PPP1CB", "SOS1", "RAF1", "RASA2", "MRAS", "RASA1", "BRAF", "SHOC2", "HRAS", "KRAS", "CBL", "A2ML1", "PTPN11", "SOS2", "MAP2K1", "NF1", "MAP2K2", "RRAS", "LZTR1")))
+params<-ScanVcfParam(which=rangos)
+vcf_chr<-readVcf(TabixFile(fileNA), "hg19", params)
+head(rowRanges(vcf_chr), 3)
+```
+
+* Creo el archivo filtrado llamado "genes.vcf":
+
+```{r}
+genes.vcf<-tempfile()
+writeVcf(vcf_chr, "genes_NA21631.vcf")
+``` 
+
+
+
+
+
+
+
+
+
+
