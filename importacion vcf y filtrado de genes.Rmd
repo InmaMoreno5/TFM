@@ -12,7 +12,7 @@ library("VariantAnnotation")
 * Cargo el archivo:
 
 ```{r}
-fileNA<- ("C:/Users/Inma/Google Drive/Master Bioinformatica y bioestadistica/TFM/Datos VCF referencia/trio_chino/HG007_NA24695_mother.vcf.gz")
+fileNA<- ("C:/Users/Inma/Master/TFM/HG007_NA24695_mother.vcf.gz")
 vcfNA<-readVcf(fileNA, "hg19")
 
 ```
@@ -45,7 +45,7 @@ head(rowRanges(vcf_chr), 3)
 
 ```{r}
 genes.vcf<-tempfile()
-writeVcf(vcf_chr, "genes_NA21631.vcf")
+writeVcf(vcf_chr, "genes_NA24695.vcf")
 ``` 
 
 
