@@ -5,9 +5,9 @@
 Archivos disponibles:
 
 - Archivos R con los códigos para: 
-  - Importación de los datos en R y creación de un archivo VCF filtrado por las posiciones genómicas: importación vcf y filtrado de genes.R
-  - Interfaz de la aplicación: ui.R 
-  - Servidor de la aplicación: server.R. 
+  - Importación vcf y filtrado de genes.R: importación de los datos en R y creación de un archivo VCF filtrado por las posiciones genómicas
+  - ui.R: interfaz de la aplicación
+  - server.R: servidor de la aplicación
 
 La aplicación está formada por dos archivos de código: ui.R y server.R. Para el funcionamiento de la aplicación es necesario descargar ambos archivos y abrirlos simultáneamente en Rstudio. En la parte superior del editor de scripts aparecerá el botón RunApp. Clicando este botón se ejecutará la aplicación. 
 (https://raw.githubusercontent.com/InmaMoreno5/TFM/main/RunApp.png)
