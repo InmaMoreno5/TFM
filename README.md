@@ -17,7 +17,7 @@ Archivos disponibles:
   - Interfaz de la aplicación: ui.R 
   - Servidor de la aplicación: server.R. 
   
--	Ficheros VCF anotados que se han utilizado: 
-  - NA12878.hg19_multianno.vcf
-  -	NA24695.hg19_multianno.vcf 
-  -	NA24695MOD.hg_multianno.vcf
+- Ficheros VCF anotados: 
+  - NA12878.hg19_multianno.vcf 
+  - NA24695.hg19_multianno.vcf 
+  - NA24695MOD.hg_multianno.vcf
