@@ -18,6 +18,6 @@ Archivos disponibles:
   - Servidor de la aplicación: server.R. 
   
 -	Ficheros VCF anotados que se han utilizado: 
-  -	NA12878.hg19_multianno.vcf
+  - NA12878.hg19_multianno.vcf
   -	NA24695.hg19_multianno.vcf 
   -	NA24695MOD.hg_multianno.vcf
