@@ -8,3 +8,16 @@ En la parte superior del editor de scripts aparecerá el botón RunApp. Clicando
 
 (https://raw.githubusercontent.com/InmaMoreno5/TFM/main/RunApp.png)
 
+
+
+Archivos disponibles:
+
+- Archivos R con los códigos para: 
+  o	Importación de los datos en R y creación de un archivo VCF filtrado por las posiciones genómicas: importación vcf y filtrado de genes.R
+  o	Interfaz de la aplicación: ui.R 
+  o	Servidor de la aplicación: server.R. 
+  
+-	Ficheros VCF anotados que se han utilizado: 
+  o	NA12878.hg19_multianno.vcf
+  o	NA24695.hg19_multianno.vcf
+  o	NA24695MOD.hg_multianno.vcf
